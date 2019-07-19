@@ -13,18 +13,20 @@ tags:
 
 In this tutorial, we are going to follow the process of implementing a feature from a user story to production-ready code.
 
-Presenting the user story
-User story: As a forgetful user, I can add a long description of a person to their entry in the address book.
+Presenting the user story:
+
+> #### User story: 
+> As a forgetful user, I can add a long description of a person to their entry in the address book.
 Conditions:
-[] The description should be visible to the user at all times.
-[] The description should be able to contain spaces and punctuation
-[] The user should be able to edit or remove the description.
-[] The user should be able to create a person without any description.
+> * The description should be visible to the user at all times.
+> * The description should be able to contain spaces and punctuation
+> * The user should be able to edit or remove the description.
+> * The user should be able to create a person without any description.
 
 ### Fishing for ideas
 Let’s brainstorm for the various ways we can implement this feature.
 Remember to consider the different aspects of a feature!
-TIP: Remember that there are no bad ideas during brainstorming! 
+Keep an open mind - there are no bad ideas during brainstorming! 
 
 #### User interface:
 * Add a new line to each existing person to show the description.
@@ -53,12 +55,18 @@ Lack of knowledge or expertise within the team is a valid criticism of a choice!
 
 An example of a breakdown from the brainstorming session above:
 
-. Add a new line to each existing person to show the description:
-    . Pros: Easy to implement. Does not drastically change the existing UI/UX
-    . Cons: Description might be lost in the visual noise 
-. Have two columns and show the person and their description side by side.
-    . Pros: Visually distinct. Easy to format long descriptions 
-. Cons: Don’t know how to implement. Description is optional so there might be blanks spaces.
-. Show the description as a tag.
-    . Pros: Trivial to implement.
-    . Cons: Breaks existing tag logic. 
+* Add a new line to each existing person to show the description:
+    * Pros: Easy to implement. Does not drastically change the existing UI/UX
+    * Cons: Description might be lost in the visual noise 
+* Have two columns and show the person and their description side by side.
+    * Pros: Visually distinct. Easy to format long descriptions 
+    * Cons: Don’t know how to implement. Description is optional so there might be blanks spaces.
+* Show the description as a tag.
+    * Pros: Trivial to implement.
+    * Cons: Breaks existing tag logic. 
+
+## Finalizing on a game plan
+
+Let's say that you have decided to implement a new command that edits a new field in a `Person`.
+Now it's time to decide how to break down the work.
+
