@@ -1,12 +1,11 @@
 ---
 title: "From user story to game plan"
-excerpt_separator: "<!--more-->"
 categories:
   - Blog
 tags:
   - Rejected
+  - Out-of-syllabus
   - Tutorial
-  - SE
 ---
 
 ## Introduction 
@@ -15,7 +14,7 @@ In this tutorial, we are going to follow the process of implementing a feature f
 
 Presenting the user story:
 
-> #### User story: 
+> ### User story: 
 > As a forgetful user, I can add a long description of a person to their entry in the address book.
 Conditions:
 > * The description should be visible to the user at all times.
@@ -48,7 +47,7 @@ In a team setting, your team members can come up with solutions or workarounds s
 This is also a good time to offer your expertise or to admit to lack thereof.
 Lack of knowledge or expertise within the team is a valid criticism of a choice! 
 
-> #### A short aside on analysis paralysis:
+> ### A short aside on analysis paralysis:
 > “Perfect” solutions don’t exist! 
 > Don’t worry about finding the best solution or get stuck on some minor detail.
 > Adopt an incremental and iterative approach by committing to delivering code and improving upon existing code every release!
@@ -69,4 +68,24 @@ An example of a breakdown from the brainstorming session above:
 
 Let's say that you have decided to implement a new command that edits a new field in a `Person`.
 Now it's time to decide how to break down the work.
+From the official tutorials on tracing code and available documentation, you should have a rough idea of components you will have to add or modify to implement your feature.
+
+It is usually a good idea (and sometimes the only idea) to start working from the model.
+
+In the case of our example, we would:
+
+1. Add a new class for a description.
+1. Modify the existing `Person` class to accept the description
+1. Modify the logic component to handle CRUD for the description
+1. Modify the storage component to account for the description
+1. Add UI related code to allow the user to interact with the logic
+
+---
+
+### P.S 
+
+This was originally meant to be the introduction of the `Remark` tutorial. 
+Wildly out of syllabus, this is more of a bastardisation of SCRUM.
+It's not the worst way to go about managing this project though. 
+  
 
