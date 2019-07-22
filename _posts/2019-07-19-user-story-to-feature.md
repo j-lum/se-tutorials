@@ -1,11 +1,10 @@
 ---
 title: "From user story to game plan"
 categories:
-  - Blog
+  - tutorial
 tags:
-  - Rejected
-  - Out-of-syllabus
-  - Tutorial
+  - rejected
+  - out-of-syllabus
 ---
 
 ## Introduction 
