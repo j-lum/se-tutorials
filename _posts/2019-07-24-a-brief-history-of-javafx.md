@@ -37,7 +37,7 @@ Built on top of AWT, GUI components are divorced from the OS and written in nati
 This mitigated the issues arising from platform-specific idiosyncrasies.
 
 .The default look and feel for modern Swing applications: Ocean
-image::OceanLookAndFeel.png[]
+![Ocean Look and Feel](/assets/2019-07-24-a-brief-history-of-javafx/OceanLookAndFeel.png)
 
 In addition, the _look and feel_ of each component can be programmatically changed.
 Notably, IntelliJ IDEA is built on Swing!
