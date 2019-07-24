@@ -1,15 +1,16 @@
 ---
 title: "From user story to game plan"
+excerpt_separator: "<!--more-->"
 categories:
-  - tutorial
+  - tutorials
 tags:
   - rejected
   - out-of-syllabus
 ---
 
-## Introduction 
-
 In this tutorial, we are going to follow the process of implementing a feature from a user story to production-ready code.
+<!--more-->
+## Introduction 
 
 Presenting the user story:
 
