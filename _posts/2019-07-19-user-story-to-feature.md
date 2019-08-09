@@ -1,5 +1,6 @@
 ---
 title: "From user story to game plan"
+classes: wide
 excerpt_separator: "<!--more-->"
 categories:
   - tutorials

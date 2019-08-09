@@ -1,5 +1,6 @@
 ---
 title: "Anatomy of a git commit"
+classes: wide
 excerpt_separator: "<!--more-->"
 categories:
   - discussion

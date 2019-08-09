@@ -1,5 +1,6 @@
 ---
 title: "A brief history of JavaFX"
+classes: wide
 excerpt_separator: "<!--more-->"
 categories:
   - tutorials
