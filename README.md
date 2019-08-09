@@ -1,2 +1,2 @@
 
-# You're looking for [this](https://j-lum.github.io/se-tutorials/)
+# You're looking for [this](http://se.kasugano.moe)
