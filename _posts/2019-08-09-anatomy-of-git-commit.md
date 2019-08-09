@@ -74,7 +74,7 @@ Again, in the front matter.
 ### What?
     
 The title line of the commit tells you what this commit achieves.
-In general, the title should start with a *transitive verb* in *present tense*.
+In general, the title should start with a *transitive verb* in *simple present tense*.
 The title should not end with any punctuation.
 
 A litmus test is to check if your commit's title line can complete the following sentence:
@@ -93,7 +93,7 @@ Fix | Fix pipes to prevent leakage | Yes
 Discombobulate | Discombobulate rude opponent | Yes
  | | 
 Edit | Edited Developer Guide to remove typo | No, wrong tense
-Remove | Removing dependencies on is_object, isobject, is.object, @unction/isobject, type-is-object, jsmicro-is-object | No, too long. Also, [hahahahahahaha](https://www.npmjs.com/search?q=isobject).
+Remove | Removing dependencies on is_object, isobject, is.object, @unction/isobject, type-is-object, jsmicro-is-object | No, too long & wrong tense. Also, [hahahahahahaha](https://www.npmjs.com/search?q=isobject).
 
 For larger projects with well-defined components, you can prepend the title with the name of the component. 
 
@@ -129,7 +129,7 @@ tl;dr:
 ## Template for a git commit message
 
 ```
-Title: Starts with active verb & < 50 columns
+Title: Start with active verb & < 50 columns
 (new line)
 Body that describes the reasoning behind the commit. Wrap this at 72
 columns. Remember that the title should not end with punctuation.
