@@ -83,4 +83,4 @@ Tutorials are meant to be straight-forward guides and here we have the history c
 Nevertheless it's nice to know about why you get 200 different implementations of buttons when you hit auto-complete.
 
 I guess it's also nice to do a survey of options available to you and making an informed choice instead of importing the first thing that comes up on google.
-That's how we got npm and it's 5,000 dependencies for a react tutorial.  
+That's how we got npm and it's 5,000 dependencies for a react tutorial.

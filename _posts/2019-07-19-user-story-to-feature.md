@@ -88,5 +88,3 @@ In the case of our example, we would:
 This was originally meant to be the introduction of the `Remark` tutorial. 
 Wildly out of syllabus, this is more of a bastardisation of SCRUM.
 It's not the worst way to go about managing this project though. 
-  
-
