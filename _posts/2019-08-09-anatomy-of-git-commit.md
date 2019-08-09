@@ -140,3 +140,10 @@ people not reading from github.
 
 Keep your commits small. 
 ```
+
+## Enforcing the guidelines 
+
+Fortunately, IntelliJ has built-in settings that you can change to enforce good git hygiene.
+This is not part of the official setting up section of the Developer Guide yet because of reasons.
+
+![Where to find it](/assets/images/2019-08-09-anatomy-of-git-commit/CommitDialogSettings.png)
