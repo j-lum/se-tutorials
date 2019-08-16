@@ -3,10 +3,9 @@ title: "A brief history of JavaFX"
 classes: wide
 excerpt_separator: "<!--more-->"
 categories:
-  - tutorials
+  - discussion
 tags:
-  - rejected
-  - out-of-syllabus
+  - javafx
 ---
 
 Before diving into the meat of JavaFX, it is important to understand its place in the history of Java's many GUI
@@ -43,14 +42,19 @@ The default look and feel for modern Swing applications: Ocean
 In addition, the _look and feel_ of each component can be programmatically changed.
 Notably, IntelliJ IDEA is built on Swing!
 
+Swing imports are under the `javax` package mainly due to historical reasons.
+At that time, eXtensions to `java` were incubated under the `javax` to be promoted to the main package when mature.
+However, Swing caught on quickly and people balked at the thought of having to change all the imports in all of their code.
+As such, Swing was stuck in the `javax` package, never to graduate. 
+
 ## JavaFX
 
 Created as a successor to Swing, JavaFX was created to compete with Adobe Flex and Microsoft Silverlight.
 Programmers used a scripting language (superficially similar to JSON) to describe a UI.
 
-.A sample JavaFX script demonstrating bindings between a model and a view
-[source, fx]
-```
+A sample JavaFX script demonstrating bindings between a model and a view:
+
+```javascript
 class HelloWorldModel {
     attribute saying: String;
 }
@@ -71,16 +75,5 @@ var win = Frame {
 
 The JavaFX scripting language was dropped in less than 3 years in favor of a new set of Java APIs.
 
-Since Java 11, development of JavaFX has been migrated to OpenJFX under the OpenJDK project and is no longer
-distributed together with the JDK.
-
----
-
-### P.S 
-
-Obviously fluff articles like these aren't going to make it into the official tutorial. 
-Tutorials are meant to be straight-forward guides and here we have the history channel.
-Nevertheless it's nice to know about why you get 200 different implementations of buttons when you hit auto-complete.
-
-I guess it's also nice to do a survey of options available to you and making an informed choice instead of importing the first thing that comes up on google.
-That's how we got npm and it's 5,000 dependencies for a react tutorial.
+Since Java 11, development of JavaFX has been migrated to OpenJFX under the OpenJDK project and is no longer distributed together with the JDK.
+JavaFX is distributed under its own package `javafx` which is pretty sane, all things considered.
