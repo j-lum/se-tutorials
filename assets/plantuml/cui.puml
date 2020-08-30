@@ -1,0 +1,58 @@
+@startuml
+hide circle
+hide members
+skinparam shadowing false
+skinparam backgroundColor transparent
+skinparam Class {
+    FontColor #FFFFFF
+    BorderThickness 1
+    BorderColor #FFFFFF
+    StereotypeFontColor #FFFFFF
+    FontName Arial
+    FontSize 20
+}
+
+class Master1 as "Master" #3333C4
+class Beth1 as "Beth 1" #1D8900
+class Beth2 as "Beth 2" #1D8900
+class Beth3 as "Beth 3" #1D8900
+class Beth4 as "Beth 4" #1D8900
+
+Master1 -up-> Beth1
+Beth1 -right> Beth2
+Beth2 -right> Beth3
+Beth3 -right> Beth4
+
+class Master2 as "Master" #3333C4
+class Calvin1 as "Calvin 1" #9D0012
+class Calvin2 as "Calvin 2" #9D0012
+class Calvin3 as "Calvin 3" #9D0012
+
+
+Master2 -up-> Calvin1
+Calvin1 -right> Calvin2
+Calvin2 -right> Calvin3
+
+Calvin1 -[hidden]up-> Master1
+
+note "Beth wants to end up like this!" as n1
+
+
+class Master3 as "Master" #3333C4
+class Target1 as "Calvin 1" #9D0012
+class Target2 as "Beth 1" #1D8900
+class Target3 as "Beth 2" #1D8900
+class Target4 as "Calvin 2" #9D0012
+class Target5 as "Beth 3" #1D8900
+class Target6 as "Beth 4" #1D8900
+
+n1 -left->Master3
+Master3 -up-> Target1
+Target1 -> Target2
+Target2 -> Target3
+Target3 -> Target4
+Target4 -> Target5
+Target5 -> Target6
+
+Target1 -[hidden]up-> Master2
+@enduml
